@@ -13,6 +13,7 @@
       db.run("INSERT INTO user VALUES ('admin', 'admin123', 'App Administrator')");
     });
     // }
+    
     app.post('/login', function (req, res) {
         var username = req.body.username; // a valid username is admin
         var password = req.body.password; // a valid password is admin123
